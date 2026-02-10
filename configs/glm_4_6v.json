@@ -1,0 +1,16 @@
+{
+    "model": {
+      "glm_4_6v": {
+        "class": "GLMThinking",
+        "model_path": "path/to/your/model",
+        "use_vllm": true
+      }
+    },
+    "data": {
+      "SSI_Bench": {
+        "class": "SSIBenchDataset",
+        "dataset": "SSI_Bench"
+      }
+    }
+  }
+  

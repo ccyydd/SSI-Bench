@@ -1,0 +1,19 @@
+{
+    "model": {
+      "gpt_5_2": {
+        "class": "GPT4V",
+        "model": "openai/gpt-5.2",
+        "timeout": 30,
+        "retry": 3,
+        "verbose": true,
+        "max_tokens": 8192
+      }
+    },
+    "data": {
+      "SSI_Bench": {
+        "class": "SSIBenchDataset",
+        "dataset": "SSI_Bench"
+      }
+    }
+  }
+  

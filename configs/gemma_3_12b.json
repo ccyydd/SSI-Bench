@@ -1,0 +1,16 @@
+{
+    "model": {
+      "gemma_3_12b_it": {
+        "class": "Gemma3",
+        "model_path": "path/to/your/model",
+        "use_vllm": true
+      }
+    },
+    "data": {
+      "SSI_Bench": {
+        "class": "SSIBenchDataset",
+        "dataset": "SSI_Bench"
+      }
+    }
+  }
+  

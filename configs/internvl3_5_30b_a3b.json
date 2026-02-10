@@ -1,0 +1,15 @@
+{
+  "model": {
+    "internvl3_5_30b_a3b": {
+      "class": "InternVLChat",
+      "model_path": "path/to/your/model",
+      "version": "V2.0"
+    }
+  },
+  "data": {
+    "SSI_Bench": {
+      "class": "SSIBenchDataset",
+      "dataset": "SSI_Bench"
+    }
+  }
+}

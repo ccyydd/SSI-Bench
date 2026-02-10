@@ -1,0 +1,18 @@
+{
+    "model": {
+      "gpt_4o": {
+        "class": "GPT4V",
+        "model": "openai/chatgpt-4o-latest",
+        "timeout": 30,
+        "retry": 3,
+        "verbose": true
+      }
+    },
+    "data": {
+      "SSI_Bench": {
+        "class": "SSIBenchDataset",
+        "dataset": "SSI_Bench"
+      }
+    }
+  }
+  

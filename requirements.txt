@@ -1,0 +1,45 @@
+accelerate
+decord; platform_machine != 'arm64'
+dotenv
+einops
+eva-decord; platform_machine == 'arm64'
+# flash-attn  # pip install whl later if needed
+# for gemini api
+google-genai
+gradio
+huggingface_hub
+imageio
+ipdb
+json_repair
+lmdeploy
+matplotlib
+nltk
+numpy
+omegaconf
+openai
+opencv-python>=4.4.0.46
+openpyxl
+pandas
+pillow
+portalocker
+protobuf
+python-dotenv
+qwen_vl_utils
+requests
+rich
+sentencepiece
+setuptools
+sty
+tabulate
+tiktoken
+timeout-decorator
+timm
+torch==2.7.0
+torchvision
+tqdm
+transformers<4.54.0
+typing_extensions
+validators
+vllm>=0.9.0
+xlsxwriter
+zhipuai

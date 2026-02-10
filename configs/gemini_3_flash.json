@@ -1,0 +1,18 @@
+{
+    "model": {
+      "gemini_3_flash": {
+        "class": "GPT4V",
+        "model": "google/gemini-3-flash-preview",
+        "timeout": 30,
+        "retry": 3,
+        "verbose": true
+      }
+    },
+    "data": {
+      "SSI_Bench": {
+        "class": "SSIBenchDataset",
+        "dataset": "SSI_Bench"
+      }
+    }
+  }
+  

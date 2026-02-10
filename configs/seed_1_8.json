@@ -1,0 +1,17 @@
+{
+    "model": {
+      "seed_1_8_251228": {
+        "class": "DoubaoVL",
+        "model": "doubao-seed-1-8-251228",
+        "timeout": 30,
+        "retry": 3
+      }
+    },
+    "data": {
+      "SSI_Bench": {
+        "class": "SSIBenchDataset",
+        "dataset": "SSI_Bench"
+      }
+    }
+  }
+  

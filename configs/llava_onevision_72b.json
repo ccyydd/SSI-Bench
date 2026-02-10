@@ -1,0 +1,16 @@
+{
+    "model": {
+      "llava_onevision_qwen2_72b_ov_hf": {
+        "class": "LLaVA_OneVision_HF",
+        "model_path": "path/to/your/model",
+        "device_map": "auto"
+      }
+    },
+    "data": {
+      "SSI_Bench": {
+        "class": "SSIBenchDataset",
+        "dataset": "SSI_Bench"
+      }
+    }
+  }
+  
