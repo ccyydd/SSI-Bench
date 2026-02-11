@@ -1,4 +1,5 @@
 accelerate
+datasets
 decord; platform_machine != 'arm64'
 dotenv
 einops
