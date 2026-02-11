@@ -96,35 +96,32 @@ pip install "transformers>=5.0.0rc0"
 ## Load Dataset
 ```python
 from datasets import load_dataset
-import pandas as pd
 import os
 
-dataset = load_dataset("cyang203912/SSI-Bench")
-print(dataset)
-
-df = pd.read_parquet("SSI_Bench.parquet")
+ds = load_dataset("cyang203912/SSI-Bench")["test"]
+print(ds)
 
 output_dir = "./images"
 os.makedirs(output_dir, exist_ok=True)
 
-for _, row in df.iterrows():
-    index_val = row["index"]
-    images = row["image"]
-    question = row["question"]
-    answer = row["answer"]
-    annotation_color = row["annotation_color"]
-    category = row["category"]
-    task = row["task"]
+for ex in ds:
+    index_val = ex["index"]
+    images = ex["image"]     
+    question = ex["question"]
+    answer = ex["answer"]
+    annotation_color = ex["annotation_color"]
+    category = ex["category"]
+    task = ex["task"]
 
     image_paths = []
     if images is not None:
-        for n, img_data in enumerate(images):
-            image_path = f"{output_dir}/{index_val}_{n}.jpg"
-            with open(image_path, "wb") as f:
-                f.write(img_data)
+        if not isinstance(images, list):
+            images = [images]
+
+        for n, img in enumerate(images):
+            image_path = os.path.join(output_dir, f"{index_val}_{n}.jpg")
+            img.save(image_path)
             image_paths.append(image_path)
-    else:
-        image_paths = []
 
     print(f"index: {index_val}")
     print(f"image: {image_paths}")
@@ -139,7 +136,7 @@ for _, row in df.iterrows():
 ## Evaluation
 The evaluation pipeline is implemented with <a href="https://github.com/open-compass/VLMEvalKit" target="_blank" rel="noopener noreferrer">VLMEvalKit</a>.
 
-Copy/move the TSV file downloaded in the "Load Dataset" step into `$LMUData` (default: `$HOME/LMUData`, unless set explicitly). If you can't locate `$LMUData`, run the subsequent commands first; the error message will indicate the expected path.
+Download the <a href="https://huggingface.co/datasets/cyang203912/SSI-Bench/tree/main" target="_blank" rel="noopener noreferrer">TSV file</a> into `$LMUData` (default: `$HOME/LMUData`, unless set explicitly). If you can't locate `$LMUData`, run the subsequent commands first; the error message will indicate the expected path.
 
 ### API Models
 Rename `template.env` to `.env` and update `API_KEY` / `API_BASE`.
@@ -160,7 +157,7 @@ To evaluate Hugging Face models:
 python run.py --config configs/internvl3_5_38b.json
 ```
 
-Tip: to reuse previous evaluation results, add `--reuse` when running `python run.py`. For more available arguments, please refer to <a href="https://github.com/open-compass/VLMEvalKit/blob/main/docs/en/Quickstart.md" target="_blank" rel="noopener noreferrer">the evaluation guidelines</a>.
+Tip: to reuse previous evaluation results, add `--reuse` when running `python run.py`. For more available arguments, please refer to the <a href="https://github.com/open-compass/VLMEvalKit/blob/main/docs/en/Quickstart.md" target="_blank" rel="noopener noreferrer">evaluation guidelines</a>.
 
 ## Citation
 ```bibtex
