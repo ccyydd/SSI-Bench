@@ -17,12 +17,13 @@
   <a href="https://ssi-bench.github.io/" target="_blank" rel="noopener noreferrer" style="text-decoration:none"><img alt="Homepage" src="https://img.shields.io/badge/Homepage-ssi--bench.github.io-6C63FF?style=flat-square&logo=googlechrome&logoColor=white" /></a>
   <a href="https://arxiv.org/pdf/2602.07864" target="_blank" rel="noopener noreferrer" style="text-decoration:none"><img alt="Paper" src="https://img.shields.io/badge/Paper-PDF-FF6B6B?style=flat-square&logo=adobeacrobatreader&logoColor=white" /></a>
   <a href="https://arxiv.org/abs/2602.07864" target="_blank" rel="noopener noreferrer" style="text-decoration:none"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-2602.07864-B31B1B?style=flat-square&logo=arxiv&logoColor=white" /></a>
-  <a href="https://huggingface.co/datasets/cyang203912/SSI-Bench" target="_blank" rel="noopener noreferrer" style="text-decoration:none"><img alt="Dataset" src="https://img.shields.io/badge/Dataset-HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black" /></a>
+  <a href="https://huggingface.co/datasets/cyang203912/SSI-Bench" target="_blank" rel="noopener noreferrer" style="text-decoration:none"><img alt="Dataset" src="https://img.shields.io/badge/Dataset-Hugging Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" /></a>
 </p>
 
 </div>
 
 ## News
+- 🔥 [2026-2-26]: SSI-Bench has been supported in the <a href="https://github.com/open-compass/VLMEvalKit" target="_blank" rel="noopener noreferrer">VLMEvalKit</a> repository.
 - 🔥 [2026-2-10]: We released our paper, benchmark, and evaluation codes.
 
 ## Introduction
