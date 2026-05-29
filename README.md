@@ -2,7 +2,7 @@
 
 <img src="./assets/logo.png" width="110" alt="SSI-Bench logo" />
 
-<h1>Thinking in Structures: Evaluating Spatial Intelligence through Reasoning on Constrained Manifolds</h1>
+<h1>Thinking in Structures: Evaluating Spatial Intelligence in Constraint-Governed Spaces</h1>
 
 <p align="center">
   Chen Yang, Guanxin Lin, Youquan He, Peiyao Chen, Guanghe Liu, Yufan Mo, Zhouyuan Xu, Linhao Wang, Guohui Zhang, Zihang Zhang, Shenxiang Zeng,
@@ -23,6 +23,7 @@
 </div>
 
 ## News
+- 🎉 [2026-5-1]: SSI-Bench is accepted by ICML 2026!
 - 🔥 [2026-2-26]: SSI-Bench has been supported in the <a href="https://github.com/open-compass/VLMEvalKit" target="_blank" rel="noopener noreferrer">VLMEvalKit</a> repository.
 - 🔥 [2026-2-10]: We released our paper, benchmark, and evaluation codes.
 
